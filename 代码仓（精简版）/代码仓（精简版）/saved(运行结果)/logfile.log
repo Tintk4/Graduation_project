@@ -1,0 +1,198 @@
+INFO - 03/24/26 13:15:04 - 0:00:00 - FINE_SIZE: 224
+                                     LOAD_SIZE: 256
+                                     annealing_epoch: 10
+                                     batch_sz: 16
+                                     bert_model: bert-base-uncased
+                                     clip_grad: 0
+                                     data_path: ./datasets/
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     freeze_img: 3
+                                     freeze_txt: 5
+                                     glove_path: ./datasets/glove_embeds/glove.840B.300d.txt
+                                     gradient_accumulation_steps: 40
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_freqs: Counter({'positive': 851, 'negative': 422, 'neutral': 282})
+                                     labels: ['positive', 'neutral', 'negative']
+                                     lr: 5e-05
+                                     lr_detail: n
+                                     lr_factor: 0.5
+                                     lr_img_cls: 0.0001
+                                     lr_img_enc: 5e-05
+                                     lr_patience: 2
+                                     lr_text_cls: 0.0001
+                                     lr_text_enc: 5e-05
+                                     max_epochs: 80
+                                     max_seq_len: 512
+                                     n_classes: 3
+                                     n_estimators: 500
+                                     n_workers: 12
+                                     name: MVSA_Single
+                                     noise: 0.0
+                                     num_image_embeds: 3
+                                     patience: 10
+                                     regressor: 1
+                                     savedir: ./saved\MVSA_Single
+                                     seed: 0
+                                     task: MVSA_Single
+                                     task_type: classification
+                                     text_model: transforms_bert
+                                     train_data_len: 1555
+                                     transform: vit
+                                     vision_model: resnet
+                                     vocab: <src.data.vocab.Vocab object at 0x000001F27B80B970>
+                                     vocab_sz: 30522
+                                     warmup: 10.0
+                                     weight_decay: 1e-05
+                                     weight_decay_cls: 0.0001
+                                     weight_decay_enc: 0.0001
+INFO - 03/24/26 13:15:04 - 0:00:00 - Training..
+INFO - 03/24/26 13:16:13 - 0:01:09 - [1/80] Train Loss: 2.8328
+INFO - 03/24/26 13:17:21 - 0:02:17 - Val  : Acc: M1: 0.5347 M2: 0.2954 AM: 0.8301 Min: 0.1255 Max: 0.7046 M: 0.4865 
+INFO - 03/24/26 13:17:21 - 0:02:17 - Val  : Loss: 2.74137 | Acc: 0.48649
+INFO - 03/24/26 13:18:33 - 0:03:29 - [2/80] Train Loss: 2.6540
+INFO - 03/24/26 13:19:21 - 0:04:17 - Val  : Acc: M1: 0.5386 M2: 0.3649 AM: 0.9035 Min: 0.2046 Max: 0.6988 M: 0.5232 
+INFO - 03/24/26 13:19:21 - 0:04:17 - Val  : Loss: 2.64146 | Acc: 0.52317
+INFO - 03/24/26 13:20:41 - 0:05:37 - [3/80] Train Loss: 2.4889
+INFO - 03/24/26 13:21:33 - 0:06:29 - Val  : Acc: M1: 0.5541 M2: 0.4826 AM: 1.0367 Min: 0.3629 Max: 0.6737 M: 0.5541 
+INFO - 03/24/26 13:21:33 - 0:06:29 - Val  : Loss: 2.52380 | Acc: 0.55405
+INFO - 03/24/26 13:22:57 - 0:07:53 - [4/80] Train Loss: 2.3427
+INFO - 03/24/26 13:23:46 - 0:08:42 - Val  : Acc: M1: 0.5849 M2: 0.5463 AM: 1.1313 Min: 0.4421 Max: 0.6892 M: 0.5792 
+INFO - 03/24/26 13:23:46 - 0:08:42 - Val  : Loss: 2.42164 | Acc: 0.57915
+INFO - 03/24/26 13:25:04 - 0:10:00 - [5/80] Train Loss: 2.2226
+INFO - 03/24/26 13:25:51 - 0:10:48 - Val  : Acc: M1: 0.5888 M2: 0.5695 AM: 1.1583 Min: 0.4633 Max: 0.6950 M: 0.6120 
+INFO - 03/24/26 13:25:51 - 0:10:48 - Val  : Loss: 2.32258 | Acc: 0.61197
+INFO - 03/24/26 13:27:11 - 0:12:08 - [6/80] Train Loss: 2.1008
+INFO - 03/24/26 13:28:00 - 0:12:56 - Val  : Acc: M1: 0.6100 M2: 0.5849 AM: 1.1950 Min: 0.4788 Max: 0.7162 M: 0.6255 
+INFO - 03/24/26 13:28:00 - 0:12:56 - Val  : Loss: 2.26457 | Acc: 0.62548
+INFO - 03/24/26 13:29:24 - 0:14:20 - [7/80] Train Loss: 1.9956
+INFO - 03/24/26 13:30:13 - 0:15:10 - Val  : Acc: M1: 0.6274 M2: 0.6042 AM: 1.2317 Min: 0.4749 Max: 0.7568 M: 0.6506 
+INFO - 03/24/26 13:30:13 - 0:15:10 - Val  : Loss: 2.17915 | Acc: 0.65058
+INFO - 03/24/26 13:31:38 - 0:16:34 - [8/80] Train Loss: 1.7637
+INFO - 03/24/26 13:32:32 - 0:17:28 - Val  : Acc: M1: 0.6718 M2: 0.6120 AM: 1.2838 Min: 0.4537 Max: 0.8301 M: 0.7027 
+INFO - 03/24/26 13:32:32 - 0:17:28 - Val  : Loss: 2.02487 | Acc: 0.70270
+INFO - 03/24/26 13:33:57 - 0:18:53 - [9/80] Train Loss: 1.6390
+INFO - 03/24/26 13:34:46 - 0:19:42 - Val  : Acc: M1: 0.6911 M2: 0.6197 AM: 1.3108 Min: 0.4788 Max: 0.8320 M: 0.7297 
+INFO - 03/24/26 13:34:46 - 0:19:42 - Val  : Loss: 1.96452 | Acc: 0.72973
+INFO - 03/24/26 13:36:16 - 0:21:12 - [10/80] Train Loss: 1.4844
+INFO - 03/24/26 13:37:04 - 0:22:00 - Val  : Acc: M1: 0.7104 M2: 0.6274 AM: 1.3378 Min: 0.5000 Max: 0.8378 M: 0.7452 
+INFO - 03/24/26 13:37:04 - 0:22:00 - Val  : Loss: 1.90026 | Acc: 0.74517
+INFO - 03/24/26 13:38:22 - 0:23:18 - [11/80] Train Loss: 1.3221
+INFO - 03/24/26 13:39:10 - 0:24:06 - Val  : Acc: M1: 0.6737 M2: 0.6409 AM: 1.3147 Min: 0.4826 Max: 0.8320 M: 0.7239 
+INFO - 03/24/26 13:39:10 - 0:24:06 - Val  : Loss: 1.95737 | Acc: 0.72394
+INFO - 03/24/26 13:40:33 - 0:25:29 - [12/80] Train Loss: 1.1648
+INFO - 03/24/26 13:41:26 - 0:26:22 - Val  : Acc: M1: 0.7143 M2: 0.6158 AM: 1.3301 Min: 0.4768 Max: 0.8533 M: 0.7432 
+INFO - 03/24/26 13:41:26 - 0:26:22 - Val  : Loss: 1.95537 | Acc: 0.74324
+INFO - 03/24/26 13:43:00 - 0:27:56 - [13/80] Train Loss: 1.0606
+INFO - 03/24/26 13:43:57 - 0:28:54 - Val  : Acc: M1: 0.7220 M2: 0.6255 AM: 1.3475 Min: 0.4903 Max: 0.8571 M: 0.7490 
+INFO - 03/24/26 13:43:57 - 0:28:54 - Val  : Loss: 1.98327 | Acc: 0.74903
+INFO - 03/24/26 13:45:37 - 0:30:33 - [14/80] Train Loss: 0.8422
+INFO - 03/24/26 13:46:29 - 0:31:26 - Val  : Acc: M1: 0.7162 M2: 0.6429 AM: 1.3591 Min: 0.5174 Max: 0.8417 M: 0.7452 
+INFO - 03/24/26 13:46:29 - 0:31:26 - Val  : Loss: 1.94193 | Acc: 0.74517
+INFO - 03/24/26 13:47:51 - 0:32:47 - [15/80] Train Loss: 0.7333
+INFO - 03/24/26 13:48:40 - 0:33:36 - Val  : Acc: M1: 0.7143 M2: 0.6255 AM: 1.3398 Min: 0.5039 Max: 0.8359 M: 0.7355 
+INFO - 03/24/26 13:48:40 - 0:33:36 - Val  : Loss: 2.07682 | Acc: 0.73552
+INFO - 03/24/26 13:50:00 - 0:34:56 - [16/80] Train Loss: 0.5510
+INFO - 03/24/26 13:50:48 - 0:35:44 - Val  : Acc: M1: 0.7452 M2: 0.6332 AM: 1.3784 Min: 0.5193 Max: 0.8591 M: 0.7490 
+INFO - 03/24/26 13:50:48 - 0:35:44 - Val  : Loss: 2.13561 | Acc: 0.74903
+INFO - 03/24/26 13:52:10 - 0:37:06 - [17/80] Train Loss: 0.4698
+INFO - 03/24/26 13:52:58 - 0:37:54 - Val  : Acc: M1: 0.7432 M2: 0.6351 AM: 1.3784 Min: 0.5174 Max: 0.8610 M: 0.7471 
+INFO - 03/24/26 13:52:58 - 0:37:54 - Val  : Loss: 2.19816 | Acc: 0.74710
+INFO - 03/24/26 13:54:17 - 0:39:13 - [18/80] Train Loss: 0.3946
+INFO - 03/24/26 13:55:05 - 0:40:02 - Val  : Acc: M1: 0.7297 M2: 0.6351 AM: 1.3649 Min: 0.5154 Max: 0.8494 M: 0.7355 
+INFO - 03/24/26 13:55:05 - 0:40:02 - Val  : Loss: 2.31595 | Acc: 0.73552
+INFO - 03/24/26 13:56:27 - 0:41:23 - [19/80] Train Loss: 0.3614
+INFO - 03/24/26 13:57:15 - 0:42:11 - Val  : Acc: M1: 0.7278 M2: 0.6216 AM: 1.3494 Min: 0.5000 Max: 0.8494 M: 0.7355 
+INFO - 03/24/26 13:57:15 - 0:42:11 - Val  : Loss: 2.38254 | Acc: 0.73552
+INFO - 03/24/26 13:58:37 - 0:43:33 - [20/80] Train Loss: 0.3298
+INFO - 03/24/26 13:59:27 - 0:44:23 - Val  : Acc: M1: 0.7239 M2: 0.6216 AM: 1.3456 Min: 0.4961 Max: 0.8494 M: 0.7413 
+INFO - 03/24/26 13:59:27 - 0:44:23 - Val  : Loss: 2.37349 | Acc: 0.74131
+INFO - 03/24/26 14:00:49 - 0:45:45 - [21/80] Train Loss: 0.2904
+INFO - 03/24/26 14:01:37 - 0:46:33 - Val  : Acc: M1: 0.7259 M2: 0.6332 AM: 1.3591 Min: 0.5135 Max: 0.8456 M: 0.7394 
+INFO - 03/24/26 14:01:37 - 0:46:33 - Val  : Loss: 2.41729 | Acc: 0.73938
+INFO - 03/24/26 14:03:01 - 0:47:57 - [22/80] Train Loss: 0.2609
+INFO - 03/24/26 14:03:49 - 0:48:45 - Val  : Acc: M1: 0.7394 M2: 0.6313 AM: 1.3707 Min: 0.5116 Max: 0.8591 M: 0.7452 
+INFO - 03/24/26 14:03:49 - 0:48:45 - Val  : Loss: 2.41802 | Acc: 0.74517
+INFO - 03/24/26 14:05:12 - 0:50:08 - [23/80] Train Loss: 0.2645
+INFO - 03/24/26 14:06:00 - 0:50:56 - Val  : Acc: M1: 0.7432 M2: 0.6448 AM: 1.3880 Min: 0.5328 Max: 0.8552 M: 0.7413 
+INFO - 03/24/26 14:06:00 - 0:50:56 - Val  : Loss: 2.44837 | Acc: 0.74131
+INFO - 03/24/26 14:06:02 - 0:50:58 - No improvement. Breaking out of loop.
+INFO - 03/24/26 14:06:02 - 0:50:58 - Reload best model epoch: 13
+INFO - 03/24/26 14:06:03 - 0:50:59 - 开始生成评估结果和pkl文件...
+INFO - 03/24/26 14:06:58 - 0:51:54 - Train: Acc: M1: 0.8579 M2: 0.8875 AM: 1.7453 Min: 0.7595 Max: 0.9859 M: 0.9325 
+INFO - 03/24/26 14:06:58 - 0:51:54 - Train: Loss: 0.83883 | Acc: 0.93248
+INFO - 03/24/26 14:07:46 - 0:52:42 - Val  : Acc: M1: 0.7220 M2: 0.6255 AM: 1.3475 Min: 0.4903 Max: 0.8571 M: 0.7490 
+INFO - 03/24/26 14:07:46 - 0:52:42 - Val  : Loss: 1.98327 | Acc: 0.74903
+INFO - 03/24/26 14:08:35 - 0:53:31 - Test : Acc: M1: 0.7611 M2: 0.6435 AM: 1.4046 Min: 0.5183 Max: 0.8863 M: 0.7669 
+INFO - 03/24/26 14:08:35 - 0:53:31 - Test - test: Loss: 1.85097 | Acc: 0.76686
+INFO - 03/24/26 14:08:35 - 0:53:31 - Acc: M1: 0.8239 M2: 0.8220 Min: 0.6922 Max: 0.9537 
+INFO - 03/24/26 14:08:35 - 0:53:31 - training model.
+INFO - 03/24/26 14:08:35 - 0:53:31 - Acc: M1: 0.8239 M2: 0.8220 Min: 0.6922 Max: 0.9537 
+INFO - 03/24/26 14:08:35 - 0:53:31 - Val  W error: 0.2662 Acc: 0.8857
+INFO - 03/24/26 14:08:35 - 0:53:31 - Acc: M1: 0.7611 M2: 0.6435 Min: 0.5183 Max: 0.8863 
+INFO - 03/24/26 14:08:35 - 0:53:31 - Test W error: 0.3451 Acc: 0.7726
+INFO - 03/24/26 14:08:35 - 0:53:31 - 训练提前终止于第 23 个epoch
+INFO - 03/24/26 14:08:35 - 0:53:31 - 所有评估和pkl文件生成完成
+INFO - 03/24/26 14:11:44 - 0:00:00 - batch_size: 512
+                                     data_nums: 1
+                                     dataset: MVSA
+                                     device: cuda:0
+                                     epochs: 100
+                                     gpu: 0
+                                     lr: 5e-05
+                                     model: Linear
+                                     n_nodes: 100
+                                     name: MVSA_Single_emc
+                                     nlayers: 0
+                                     noise: 0
+                                     output_dir: emc_data
+                                     path: ../saved/MVSA_Single
+                                     seed: 42
+                                     top_k_logits: 200
+INFO - 03/24/26 14:11:44 - 0:00:00 - ../saved/MVSA_Single train
+INFO - 03/24/26 14:11:44 - 0:00:00 - Trian data: torch.Size([2, 2073, 3])
+INFO - 03/24/26 14:11:44 - 0:00:00 - ../saved/MVSA_Single train
+                                     noise_0 : M1: 85.79±0.00 M2: 88.75±0.00 Min: 75.95±0.00 Max: 98.59±0.00 M: 93.25±0.00 Train mse: 0.35±0.00 Test mse: 0.31±0.00
+INFO - 03/24/26 14:11:44 - 0:00:00 - ../saved/MVSA_Single dev
+INFO - 03/24/26 14:11:44 - 0:00:00 - Trian data: torch.Size([2, 2073, 3])
+INFO - 03/24/26 14:11:44 - 0:00:00 - ../saved/MVSA_Single dev
+                                     noise_0 : M1: 72.20±0.00 M2: 62.55±0.00 Min: 49.03±0.00 Max: 85.71±0.00 M: 74.52±0.00 Train mse: 0.35±0.00 Test mse: 0.45±0.00
+INFO - 03/24/26 14:11:44 - 0:00:00 - ../saved/MVSA_Single test
+INFO - 03/24/26 14:11:44 - 0:00:00 - Trian data: torch.Size([2, 2073, 3])
+INFO - 03/24/26 14:11:44 - 0:00:00 - ../saved/MVSA_Single test
+                                     noise_0 : M1: 76.11±0.00 M2: 64.35±0.00 Min: 51.83±0.00 Max: 88.63±0.00 M: 77.26±0.00 Train mse: 0.35±0.00 Test mse: 0.44±0.00
+INFO - 03/24/26 14:11:44 - 0:00:01 - Trian data: torch.Size([2, 2073, 3])
+INFO - 03/24/26 14:22:45 - 0:00:00 - batch_size: 512
+                                     data_nums: 1
+                                     dataset: MVSA
+                                     device: cuda:0
+                                     epochs: 100
+                                     gpu: 0
+                                     lr: 5e-05
+                                     model: Linear
+                                     n_nodes: 100
+                                     name: MVSA_Single_emc
+                                     nlayers: 0
+                                     noise: 0
+                                     output_dir: emc_data
+                                     path: ../saved/MVSA_Single
+                                     seed: 42
+                                     top_k_logits: 200
+INFO - 03/24/26 14:22:45 - 0:00:00 - ../saved/MVSA_Single train
+INFO - 03/24/26 14:22:45 - 0:00:00 - Trian data: torch.Size([2, 2073, 3])
+INFO - 03/24/26 14:22:45 - 0:00:00 - ../saved/MVSA_Single train
+                                     noise_0 : M1: 85.79±0.00 M2: 88.75±0.00 Min: 75.95±0.00 Max: 98.59±0.00 M: 93.25±0.00 Train mse: 0.35±0.00 Test mse: 0.31±0.00
+INFO - 03/24/26 14:22:45 - 0:00:00 - ../saved/MVSA_Single dev
+INFO - 03/24/26 14:22:45 - 0:00:00 - Trian data: torch.Size([2, 2073, 3])
+INFO - 03/24/26 14:22:45 - 0:00:00 - ../saved/MVSA_Single dev
+                                     noise_0 : M1: 72.20±0.00 M2: 62.55±0.00 Min: 49.03±0.00 Max: 85.71±0.00 M: 74.52±0.00 Train mse: 0.35±0.00 Test mse: 0.45±0.00
+INFO - 03/24/26 14:22:45 - 0:00:00 - ../saved/MVSA_Single test
+INFO - 03/24/26 14:22:45 - 0:00:00 - Trian data: torch.Size([2, 2073, 3])
+INFO - 03/24/26 14:22:45 - 0:00:00 - ../saved/MVSA_Single test
+                                     noise_0 : M1: 76.11±0.00 M2: 64.35±0.00 Min: 51.83±0.00 Max: 88.63±0.00 M: 77.26±0.00 Train mse: 0.35±0.00 Test mse: 0.44±0.00
+INFO - 03/24/26 14:22:45 - 0:00:00 - Trian data: torch.Size([2, 2073, 3])

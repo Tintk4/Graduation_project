@@ -1,0 +1,10 @@
+scipy
+scikit-learn~=1.7.2
+tqdm~=4.67.1
+pytorch_pretrained_bert
+transformers~=4.57.1
+numpy~=2.2.6
+torch~=2.9.0+cu128
+pillow~=12.0.0
+torchvision~=0.24.0+cu128
+matplotlib~=3.10.7
